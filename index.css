@@ -1,0 +1,185 @@
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+*{
+    /*box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer
+}
+
+.container {
+
+    background: linear-gradient(#e6d8acb2, #c9ac98e0);
+    margin:auto;
+ 
+    display: grid;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    grid-template-areas:
+
+    "header header header header header header"
+    "content content content content content content"
+    "footer footer footer footer footer footer"
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 40, 40);
+}
+
+.header-image {
+    height: 400px;
+    background-image: url(img/davide-cantelli-jpkfc5_d-DI-unsplash2.jpg);
+    background-size: cover;
+    overflow: auto;
+    background-position: center;
+    
+}
+
+footer {
+    border-style: none;
+    border-width: 0px;
+    text-align: center;
+    padding-bottom: 1vw;
+    
+}
+.content {
+    border-style: solid;
+    border-width: 0px;
+}
+
+.main-nav {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(41, 40, 40);
+    max-width: 100%;
+    /*border-style: dotted;*/
+    
+    
+}
+.main-nav a {
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px;    
+}
+
+.main-nav a:hover{
+    color: goldenrod;
+    background-color: rgba(31, 30, 30, 0.568);
+    padding: 10px;
+}
+
+
+article{
+    text-align: center;
+    margin: 5em 25%;
+    column-width: 50%;
+}
+
+.menu-list {
+    margin:1em 1em 1em 1em;
+}
+.menu-item {
+    margin-bottom: 15px;
+    font-size: .9em;
+    list-style: none;
+    
+}
+
+
+.menu-price {
+    display:inline;
+    font-weight: 700;
+}
+
+form {
+    margin: 0 10%;
+    padding-bottom: 20em;
+}
+
+h1{
+    padding-bottom: 1vw;
+    color: rgb(29, 28, 27);
+}
+p {
+    line-height: 1.75;
+}
+
+h3 {
+    padding: 1em;
+}
+
+
+main {
+    overflow: auto;
+}
+.SVG-img {
+    max-width: 30%;
+    margin-top: 200px;
+}
+
+.parallax {
+    height: 500px;
+    background-image: url(img/yeh-xintong-5wwv5PgSnLI-unsplash2.jpg);
+    max-height: 100% ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+@media only screen and ( max-width: 800px ) {
+
+    article { 
+        margin: 5em auto;
+        
+    }
+    /* ikoner istället för text på små skärmar kan vara bra */
+    .header-image {
+        max-height: 200px;
+
+        overflow: auto;
+        
+        background-position: center;
+    }
+
+    .parallax {
+    
+        background-image: url(img/yeh-xintong-5wwv5PgSnLI-unsplash2.jpg);
+        max-height: 50% ;
+    
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
