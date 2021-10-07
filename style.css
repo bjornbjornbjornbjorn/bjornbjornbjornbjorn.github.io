@@ -3,28 +3,19 @@ body::before {
     content: "";
     height:60px;
 }
-/*
-#carouselExampleControls {
 
-    max-height: 500px;
-    overflow: contain;
-}
-*/
 @media (min-width: 768px) {
     .hello-input {
         width: 50%;
     }
 }
 
-.small-images {
-    height: 500px;
-    width: auto;
+
+.small-img {
+    max-height: 500px;
+    
 }
-/*
-body {
-    background-color: rgb(31, 31, 31);
-}
-*/
+
 
 .parallax {
     height: 500px;
@@ -40,3 +31,8 @@ body {
 .medium-img {
     height: 500px
 }
+
+.card.bg-secondary.text-light {
+    min-height: 600px;
+}
+
