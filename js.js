@@ -2,7 +2,7 @@
 function changeMode() {
     let body = document.getElementById("body")
     let jumbo = document.getElementById("jumbo");
-    var jumboClass = jumbo.getAttribute("class");
+    let jumboClass = jumbo.getAttribute("class");
 
     console.log(jumboClass)
     if (jumboClass == "bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start") {
@@ -20,10 +20,17 @@ function changeMode() {
 }
 
 function mouseOver() {
-    let card = document.getElementById("card")
-    card.setAttribute("class", "animate__animated animate__pulse")
+    let card = document.getElementById("card");
+    let cardClass = card.getAttribute("class");
 
+    if (cardClass == "") {
+        card.setAttribute("class", "animate__animated animate__pulse");
+    }
+    if (cardClass != "") {
+        card.setAttribute("class", "")
+    }
 }
+
 
 
 let i = 0; 			// Räknare 
@@ -51,4 +58,4 @@ function changeImg() {
 
 // Funktionen changeImg körs när fönstret laddas
 window.onload = changeImg;
-window.onload = mouseOver;
+
