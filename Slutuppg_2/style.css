@@ -1,0 +1,42 @@
+body::before {
+    display:block;
+    content: "";
+    height:60px;
+}
+/*
+#carouselExampleControls {
+
+    max-height: 500px;
+    overflow: contain;
+}
+*/
+@media (min-width: 768px) {
+    .hello-input {
+        width: 50%;
+    }
+}
+
+.small-images {
+    height: 500px;
+    width: auto;
+}
+/*
+body {
+    background-color: rgb(31, 31, 31);
+}
+*/
+
+.parallax {
+    height: 500px;
+    background-image: url(img/aleks-dorohovich-nJdwUHmaY8A-unsplash.jpg);
+    max-height: 100% ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.medium-img {
+    height: 500px
+}
